@@ -25,7 +25,13 @@ class MainActivity : AppCompatActivity() {
 
         val stations = listOf(
             RadioStation("ClubFM", "https://eu10.fastcast4u.com/clubfmuae"),
-            RadioStation("Mango", "https://bcovlive-a.akamaihd.net/19b535b7499a4719a5c19e043063f5d9/ap-southeast-1/6034685947001/profile_2/chunklist.m3u8")
+            RadioStation("Mango", "https://bcovlive-a.akamaihd.net/19b535b7499a4719a5c19e043063f5d9/ap-southeast-1/6034685947001/profile_2/chunklist.m3u8"),
+            RadioStation("BBC World Service","https://stream.live.vc.bbcmedia.co.uk/bbc_world_service"),
+            RadioStation("NPR","https://npr-ice.streamguys1.com/live.mp3"),
+            RadioStation("Calicut","https://air.pc.cdn.bitgravity.com/air/live/pbaudio082/chunklist.m3u8"),
+            RadioStation("Tirur","https://sonic01.instainternet.com/8002/stream")
+
+
             // Add more stations as needed
         )
         adapter = RadioStationAdapter(stations) { position ->
